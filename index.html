@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <!-- <h2><u><em>CALCULATOR</em></u></h2> -->
+    <div class="calculator" style="align-items: center;">
+        <h1><em>CALCULATOR</em></h1>
+       
+        <form action="">
+            <div id="input">
+                <input id="output" placeholder="0" type="text" style="width: 340px;">
+            </div>
+           <div class="btns">
+                <div >
+                    <input onclick="clearAll()"class="btn" id="clear" type="button" value="AC" style="color: red;" >
+                    <input class="btn" onclick="removeLast()" type="button" id="delete" value="D"style="color: red;" >
+                    <input onclick="display('%')" id="percentage" class="btn" type="button" value="%" style="color: rgb(117, 236, 117);">
+                    <input onclick="display('/')" id="division" type="button" value="/" style="color: rgb(117, 236, 117);">
+                </div>
+                <div>
+                    <input  onclick="display(7)" id="seven" type="button" value="7" >
+                    <input  onclick="display(8)" id="eight" type="button" value="8" >
+                    <input onclick="display(9)" id="nine" type="button" value="9" >
+                    <input onclick="display('*')" id="star" type="button"  value="*" style="color:rgb(117, 236, 117);">
+                </div>
+                <div>
+                    <input onclick="display(4)" id="four" type="button" value="4" >
+                    <input onclick="display(5)" id="five" type="button" value="5" >
+                    <input onclick="display(6)" id="six" type="button" value="6" >
+                    <input onclick="display('-')"  id="minus" type="button" value="-" style="color: rgb(117, 236, 117);">
+                </div>
+                <div>
+                    <input onclick="display(1)" id="one" type="button" value="1" >
+                    <input onclick="display(2)" id="two" type="button" value="2" >
+                    <input onclick="display(3)" id="three" type="button" value="3" >
+                    <input onclick="display('+')" id="plus" type="button" value="+" style="color: rgb(117, 236, 117);" >
+                </div>
+                <div>
+                    <input onclick="display('00' )" id="doublezero" type="button" value="00" >
+                    <input onclick="display(0)" id="zero" type="button" value="0" >
+                    <input onclick="display('.')" id="dot" type="button" value="." >
+                    <input onclick="evaluateExp()" id="equal" type="button" value="=" style="background-color: green;">
+                </div>
+               
+           </div class="btns">
+        </form>
+    </div>
+</body>
+<script src="./calcu.js">
+    
+</script>
+</html>
